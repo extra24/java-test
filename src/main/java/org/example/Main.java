@@ -7,14 +7,10 @@ public class Main {
         op();
         System.out.println("[조건문]");
         cond();
-
-
+        System.out.println("[반복문]");
+        loop();
 
     }
-    public static void bar(){
-        System.out.println("==================================");
-    }
-
     //연산자 함수
     public static void op(){
         System.out.println("- 산술 연산자");
@@ -54,6 +50,21 @@ public class Main {
 
         System.out.println("- switch 문");
         switch_cond();
+        bar();
+    }
+
+    //반복문 함수
+    public static void loop(){
+        System.out.println("- for 문");
+        for_loop();
+        bar();
+
+        System.out.println("- while 문");
+        while_loop();
+        bar();
+
+        System.out.println("- do-while 문");
+        do_while_loop();
         bar();
     }
 
@@ -136,5 +147,33 @@ public class Main {
         }
     }
 
+    //for 문
+    public static void for_loop(){
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+    }
+
+    //while 문
+    public static void while_loop(){
+        int count = 3;
+        while (count > 0) {
+            System.out.println(count);
+            count--;
+        }
+    }
+
+    //do-while 문
+    public static void do_while_loop(){
+        int num = 0;
+        do {
+            System.out.println(num);
+            num++;
+        } while (num < 3);
+    }
+
+    public static void bar(){
+        System.out.println("==================================");
+    }
 
 }
