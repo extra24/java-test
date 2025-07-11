@@ -1,10 +1,12 @@
-package org.example;
+package org.example; // 디렉토리 구조 -> 필수
 
-public class Main {
-    public static void main(String[] args) {
+public class Main { // class 선언
+    //메소드 실행
+    //static이 있어야 메모리 올라가서 실행시킬 수 있다.
+    public static void main(String[] args) { // 메소드
 
         System.out.println("[연산자]");
-        op();
+        op(); // 메소드 호출
         System.out.println("[조건문]");
         cond();
         System.out.println("[반복문]");
@@ -54,6 +56,8 @@ public class Main {
     }
 
     //반복문 함수
+    //메소드 : 행위를 해주게 하는 것
+    //접근자(접근을 허용할 건지 안할건지로 public/private 등) 반환형(메소드를 실행시키고 나서 나오는 결과값 void 등) 이름
     public static void loop(){
         System.out.println("- for 문");
         for_loop();
@@ -70,10 +74,20 @@ public class Main {
 
     //산술 연산자
     public static void arithmetic_op(){
+        //변수 : 어떤걸 정의
          int a = 10;
          int b = 3;
-         System.out.println(a+b);
+//         System.out.println(a+b);
+         System.out.println(add(a,b));
          System.out.println(a % b);
+
+    }
+
+    //산술 연산자용 추가 함수
+    //여기는 반환형이 int
+    public static int add(int a, int b){
+        int sum = a+b; //a+b 더한값을 sum으로 저장
+        return sum; // 합계 반환
     }
 
     //대입 연산자
