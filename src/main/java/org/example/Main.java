@@ -5,10 +5,10 @@ public class Main { // class 선언
     //static이 있어야 메모리 올라가서 실행시킬 수 있다.
     public static void main(String[] args) { // 메소드
 
-        System.out.println("[연산자]");
-        op(); // 메소드 호출
-        System.out.println("[조건문]");
-        cond();
+//        System.out.println("[연산자]");
+//        op(); // 메소드 호출
+//        System.out.println("[조건문]");
+//        cond();
         System.out.println("[반복문]");
         loop();
 
@@ -179,26 +179,27 @@ public class Main { // class 선언
 
     //for 문
     public static void for_loop(){
-        for (int i = 0; i < 5; i++) {
+        //초기값; 언제까지 진행해라; 연산방식
+        for (int i = 3; i < 5; i++) {
             System.out.println(i);
         }
     }
 
-    //while 문
+    //while 문 : 초기값을 밖에다 설정하고 진행하는 것
     public static void while_loop(){
         int count = 3;
-        while (count > 0) {
+        while (count > 0) { //0보다 클 때까지 실행해라
             System.out.println(count);
-            count--;
+            count--; // 계속 하나씩 빼가는 것
         }
     }
 
-    //do-while 문
+    //do-while 문 : 초기값을 주는것, while하고 비슷하나 최소 한 번은 실행됨
     public static void do_while_loop(){
         int num = 0;
         do {
             System.out.println(num);
-            num++;
+            num++; // 계속 하나씩 증가
         } while (num < 3);
     }
 
