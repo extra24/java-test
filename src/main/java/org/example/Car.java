@@ -43,14 +43,13 @@ public class Car {
         return this.year;
     }
 
-
-
-    //객체생성
+    //객체
     public static void main(String[] args){
-        Car myCar = new Car();
+        Car myCar = new Car(); // 객체 만들기
         myCar.setBrand("기아"); //여기서 brand 값을 넣는다.
-        myCar.setModel("K9");
-        myCar.setYear(5);
+        myCar.setModel("K9"); // 값 생성(데이터 삽입)
+        myCar.setYear(2012);
+
         System.out.println("브랜드 : "+ myCar.getBrand());
         System.out.println("모델 : "+ myCar.getModel());
         System.out.println("연식 : "+ myCar.getYear());
