@@ -9,8 +9,10 @@ public class Main { // class 선언
 //        op(); // 메소드 호출
 //        System.out.println("[조건문]");
 //        cond();
-        System.out.println("[반복문]");
-        loop();
+//        System.out.println("[반복문]");
+//        loop();
+        System.out.println("[배열]");
+        arrayTest();
 
     }
     //연산자 함수
@@ -74,6 +76,37 @@ public class Main { // class 선언
         System.out.println("- do-while 문");
         do_while_loop();
         bar();
+    }
+
+    //배열 함수
+    public static void arrayTest(){
+
+//        int a = 1;
+//        int b = 2;
+//        int c = 3;
+//        int d = 4;
+//        int e = 5;
+//
+//        // 배열 선언 및 초기화
+//        // 1. 배열에 다섯개의 값을 넣는것
+//        int[] numbers_1 = {a,b,c,d,e};
+//
+//        // 2. 빈 배열 선언하고 값 넣는 것
+//        int[] numbers_2 = new int[5];
+//        numbers_2[0] = 1;
+//        numbers_2[1] = 2;
+//        numbers_2[2] = 3;
+//        numbers_2[3] = 4;
+//
+//        numbers_1[3] = 10;
+//        System.out.println(numbers_1[3]);
+//        System.out.println(numbers_2.length);
+
+        int[] nums = {1,2,3,4,5};
+        for(int i = 0; i < nums.length; i++){
+            System.out.println(nums[i]);
+        }
+
     }
 
     //산술 연산자
