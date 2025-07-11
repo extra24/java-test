@@ -16,11 +16,6 @@ public class Car {
         System.out.println("자동차가 멈춥니다.");
     }
 
-
-
-
-
-
     //변수 brand에 대해 인수로 값를 받아서 brand 변수에 저장하는것
     public void setBrand(String brand){
         //this라는게 위에 선언한 것을 의미함
@@ -32,11 +27,33 @@ public class Car {
         return this.brand;
     }
 
+    public void setModel(String model){
+        this.model = model;
+    }
+
+    public String getModel(){
+        return this.model;
+    }
+
+    public void setYear(int year){
+        this.year = year;
+    }
+
+    public int getYear(){
+        return this.year;
+    }
+
+
+
     //객체생성
     public static void main(String[] args){
         Car myCar = new Car();
         myCar.setBrand("기아"); //여기서 brand 값을 넣는다.
+        myCar.setModel("K9");
+        myCar.setYear(2012);
         System.out.println("브랜드 : "+ myCar.getBrand());
+        System.out.println("모델 : "+ myCar.getModel());
+        System.out.println("등장년도 : "+ myCar.getYear());
 
         myCar.move();
         myCar.stop();
