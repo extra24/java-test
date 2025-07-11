@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.top.Flyable; // 다른 패키지의 클래스를 사용할 때 불러오는 선언 : import
+
 public class Bird implements Flyable, Walkable{
 
     @Override
