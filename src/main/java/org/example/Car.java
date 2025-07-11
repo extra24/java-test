@@ -50,10 +50,10 @@ public class Car {
         Car myCar = new Car();
         myCar.setBrand("기아"); //여기서 brand 값을 넣는다.
         myCar.setModel("K9");
-        myCar.setYear(2012);
+        myCar.setYear(5);
         System.out.println("브랜드 : "+ myCar.getBrand());
         System.out.println("모델 : "+ myCar.getModel());
-        System.out.println("등장년도 : "+ myCar.getYear());
+        System.out.println("연식 : "+ myCar.getYear());
 
         myCar.move();
         myCar.stop();
