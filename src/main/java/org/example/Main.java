@@ -55,7 +55,9 @@ public class Main { // class 선언
         bar();
 
         System.out.println("- switch 문");
-        switch_cond();
+//        switch_cond();
+        String dayStr = switch_cond(1);
+        System.out.println(dayStr);
         bar();
     }
 
@@ -150,22 +152,29 @@ public class Main { // class 선언
     }
 
     //switch 문
-    public static void switch_cond(){
-        int day = 3;
+    //괄호 안에 들어가는게 인자
+    public static String switch_cond(int day){
+//        int day = 3;
+        String str = "";
         switch (day) {
             case 1:
-                System.out.println("월요일");
+//                System.out.println("월요일");
+                str = "월요일";
                 break;
             case 2:
-                System.out.println("화요일");
+//                System.out.println("화요일");
+                str = "화요일";
                 break;
             case 3:
-                System.out.println("수요일");
+//                System.out.println("수요일");
+                str = "수요일";
                 break;
             default:
-                System.out.println("기타 요일");
+//                System.out.println("기타 요일");
+                str = "기타 요일";
                 break;
         }
+        return str;
     }
 
     //for 문
