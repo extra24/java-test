@@ -5,8 +5,7 @@ import java.util.List;
 
 public class ListTest {
 
-    public static void main(String[] args) {
-
+    public static void listTest() {
         // 1부터 9까지 숫자를 list에 저장
         List<Integer> list_1 = new ArrayList<>();
         for(int i = 1; i< 10; i++){
@@ -17,6 +16,11 @@ public class ListTest {
         for(Integer item: list_1){
             System.out.println(item);
         }
+    }
+
+    public static void main(String[] args) {
+
+        listTest();
 
 //        List<String> list = new ArrayList<>();
 //        list.add("Java");
