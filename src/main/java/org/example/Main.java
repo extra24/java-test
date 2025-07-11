@@ -1,5 +1,7 @@
 package org.example; // 디렉토리 구조 -> 필수
 
+import java.util.Scanner;
+
 public class Main { // class 선언
     //메소드 실행
     //static이 있어야 메모리 올라가서 실행시킬 수 있다.
@@ -11,8 +13,12 @@ public class Main { // class 선언
 //        cond();
 //        System.out.println("[반복문]");
 //        loop();
-        System.out.println("[배열]");
-        arrayTest();
+//        System.out.println("[배열]");
+//        arrayTest();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("이름을 입력하세요: ");
+        String name = scanner.nextLine();
+        System.out.println("안녕하세요, " + name);
 
     }
     //연산자 함수
