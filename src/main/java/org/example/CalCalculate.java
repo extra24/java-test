@@ -24,8 +24,18 @@ public class CalCalculate {
     }
 
     //나눗셈
-    public double divide(int a, int b){
-        return (double) a / b;
+    public int divide(int a, int b){
+        int result = 0;
+        // 예외처리
+        try {
+            result = a / b;
+        }catch (Exception e){
+            System.out.println("0으로 나눌 수 없습니다. "+e);
+            System.out.println("프로그램 종료");
+            System.exit(0);
+        }
+
+        return result;
     }
 
     //곱셈
@@ -53,7 +63,7 @@ public class CalCalculate {
     public static void main(String[] args){
         CalCalculate myCalc = new CalCalculate();
         myCalc.setA(6);
-        myCalc.setB(3);
+        myCalc.setB(0);
 
         System.out.println("덧셈 : " + myCalc.add(myCalc.getA(), myCalc.getB()));
         System.out.println("뺄셈 : " + myCalc.minus(myCalc.getA(), myCalc.getB()));
