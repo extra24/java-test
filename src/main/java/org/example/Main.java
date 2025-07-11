@@ -14,6 +14,8 @@ public class Main { // class 선언
 
     }
     //연산자 함수
+    //메소드 : 행위를 해주게 하는 것
+    //접근자(접근을 허용할 건지 안할건지로 public/private 등) 반환형(메소드를 실행시키고 나서 나오는 결과값 void 등) 이름
     public static void op(){
         System.out.println("- 산술 연산자");
         arithmetic_op();
@@ -47,7 +49,9 @@ public class Main { // class 선언
     //조건문 함수
     public static void cond(){
         System.out.println("- if 문");
-        if_cond();
+//        if_cond();
+        String str = if_cond(-1);
+        System.out.println( str + " 입니다.");
         bar();
 
         System.out.println("- switch 문");
@@ -56,8 +60,6 @@ public class Main { // class 선언
     }
 
     //반복문 함수
-    //메소드 : 행위를 해주게 하는 것
-    //접근자(접근을 허용할 건지 안할건지로 public/private 등) 반환형(메소드를 실행시키고 나서 나오는 결과값 void 등) 이름
     public static void loop(){
         System.out.println("- for 문");
         for_loop();
@@ -131,15 +133,20 @@ public class Main { // class 선언
     }
 
     //if 문
-    public static void if_cond(){
-        int num = 10;
-        if (num > 0) {
-            System.out.println("양수입니다.");
-        } else if (num == 0) {
-            System.out.println("0입니다.");
+    public static String if_cond(int a){
+//        int num = 10;
+        String str = "";
+        if (a > 0) {
+//            System.out.println("양수입니다.");
+            str = "양수";
+        } else if (a == 0) {
+//            System.out.println("0입니다.");
+            str = "0";
         } else {
-            System.out.println("음수입니다.");
+//            System.out.println("음수입니다.");
+            str = "음수";
         }
+        return str; //문자열 반환
     }
 
     //switch 문
